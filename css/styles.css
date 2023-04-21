@@ -1,0 +1,389 @@
+/* STYLES GENERALES */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: lightpink;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    rotate: 45deg;
+}
+
+.barra-header{
+    background-color: black;
+    background-size: cover;
+    height: 130px;
+    padding: 20px 40px 0px 40px;
+}
+
+
+/* MAIN e INDEX MAIN e INDEX MAIN e INDEX MAIN e INDEX MAIN e INDEX MAIN e INDEX MAIN e INDEX */
+/* MAIN e INDEX MAIN e INDEX MAIN e INDEX MAIN e INDEX MAIN e INDEX MAIN e INDEX MAIN e INDEX */
+
+
+/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER  */
+/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER  */
+
+header .barra-header nav ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+
+header .barra-header img {
+    float: left;
+}
+
+ul {
+    list-style: none;
+    font-size:0 /* truco por el uso de inline-block*/
+}
+
+ul li img {
+    vertical-align: auto;
+    width: 100px;
+    height: 100px;
+    padding: 10px 0 0 0;
+}
+
+li {
+    display: inline-block;
+    width: 3.5%;
+    height: 70%;
+    position:relative;
+    font-size: 14px;
+    margin-right: 100px;
+}
+ul ul {
+    margin: 10px 0 0 0;
+    background-color: gray;
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+ul ul li {
+    padding: 1%;
+    display: block;
+}
+ul li:hover ul {
+    display:block;
+    border: solid 1px white;
+}
+
+header div nav ul li ul li {
+    font-size: 40px;
+}
+
+
+header div nav ul li a {
+    text-decoration: none;
+    color: purple;
+    line-height: 26px;
+}
+
+/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER  */
+/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER  */
+
+.productos .contenedor {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.productos .contenedor figcaption{
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+main .productos h2 {
+    color: rgb(30, 30, 30);
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    margin: 20px 0 30px 20px;
+}
+
+main .productos h3 {
+
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.contenedor figcaption {
+    font-size: 30px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.banner__main {
+    height: 800px;
+    width: 100%;
+    background-image: url(/img/Fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+main .productos .contenedor figure {
+    text-align: center;
+    margin: 0 20px;
+}
+
+main .productos .contenedor figure img {
+    height: 30vh;
+    width: 30vh;
+}
+
+
+/* MAIN e INDEX MAIN e INDEX MAIN e INDEX MAIN e INDEX MAIN e INDEX MAIN e INDEX MAIN e INDEX */
+/* MAIN e INDEX MAIN e INDEX MAIN e INDEX MAIN e INDEX MAIN e INDEX MAIN e INDEX MAIN e INDEX */
+
+/* PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS  */
+/* PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS  */
+
+.main-productos h1{
+    background-color: lightsalmon;
+    color: blueviolet;
+    border-top: solid white 5px;
+    border-bottom: solid white 5px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 100px;
+}
+
+.main-productos h2{
+    background-color: lightcoral;
+    color: blueviolet;
+    border-top: solid white 5px;
+    border-bottom: solid white 5px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.main-productos h3{
+    background-color: rgb(240, 144, 144);
+    color: white;
+    font-weight: bold;
+    border-top: solid white 5px;
+    border-bottom: solid white 5px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.seccion-productos {
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.seccion-productos figure {
+    border: solid white 5px;
+    border-radius: 10px;
+    background-color: lightcoral;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.seccion-productos img {
+    width: 500px;
+    height: 500px;
+}
+
+.seccion-productos figure figcaption {
+    background-color: white ;
+    width: 300px;
+    color: blueviolet;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 5px 5px 35px 35px;
+}
+
+.seccion-productos figure a:hover img {
+    background-color: blueviolet;
+    border-radius: 100px;
+}
+
+.contenedor-productos div div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 100px 0;
+}
+
+.contenedor-productos div div div {
+    text-align: center;
+    display: block;
+}
+
+.contenedor-productos div div div .nombre-producto {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.contenedor-productos div div div .producto-precio {
+    font-size: 25px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.contenedor-productos div div div img {
+    width: 400px;
+    height: 400px;
+}
+
+/* PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS  */
+/* PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS PRODUCTOS  */
+
+/* OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS */
+/* OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS */
+
+.main__ofertas {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10% 0;
+}
+
+.main__ofertas h3 {
+    text-align: center;
+    font-size: 100px;
+    margin: 40px 0;
+    width: 100%;
+}
+
+.main__ofertas .contenedor-ofertas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 50px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.main__ofertas .contenedor-ofertas .ofertas {
+    margin: 40px 0;
+}
+
+
+.ahora {
+    margin: 20px 0;
+    font-weight: bold;    
+}
+
+.antes {
+    margin: 20px 0;
+    text-decoration: line-through;
+}
+
+.footer-ofertas {
+    margin: 350px 0 0 0;
+}
+
+/* OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS */
+/* OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS OFERTAS */
+
+/* NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS */
+/* NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS */
+
+.main-nosotros h2 {
+    text-align: center;
+    font-size: 150px;
+    width: 100%;
+}
+
+.main-nosotros {
+    flex-wrap: wrap;
+    height: 70vh;
+    background-image: url(/img/OIP.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor-nosotros {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobrenosotros {
+    font-size: 35px;
+    text-align: center;
+    background-color: white;
+    filter: opacity(85%);
+}
+
+.sobrenosotros span {
+    font-weight: bold;
+}
+
+/* NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS */
+/* NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS */
+
+/* MAIN CONTACTO MAIN CONTACTO MAIN CONTACTO MAIN CONTACTO MAIN CONTACTO MAIN CONTACTO MAIN CONTACTO */
+
+form fieldset {
+    margin: 100px;
+}
+
+.main__contacto {
+    text-align: center;
+    font-size: 40px;
+}
+
+.main__contacto h3{
+    margin: 50px 0 0 0;
+    font-size: 60px;
+}
+
+.main__contacto p{
+    text-decoration: underline;
+}
+
+.main__contacto button {
+    color: white;
+    padding: 20px;
+    margin: 0 0 50px 0;
+    border: none;
+    background-color: blueviolet;
+}
+
+/* MAIN CONTACTO MAIN CONTACTO MAIN CONTACTO MAIN CONTACTO MAIN CONTACTO MAIN CONTACTO MAIN CONTACTO */
+
+/* FOOTER */
+
+footer {
+    clear: left;
+    padding: 40px;
+    background-color: grey;
+    height: 110px;
+    text-align: center;
+    /* position: absolute; */
+}
+
+footer div p {
+    padding-top: 40px;
+}
+
+footer img {
+    padding: 0px 40px;
+    float: left;
+}
